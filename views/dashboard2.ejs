@@ -612,7 +612,10 @@
                 </div>
                 <div class="ctn-invesment-part ctn-invesment-part2">
                   <span class="imageblock"></span>
-                  <h4><%= req.user.currency%> <%=comma(req.user.balance)%></h4>
+                  <h4>
+                    <%= req.user.currency%>
+                    <%=comma(req.user.pending_withdrawal)%>
+                  </h4>
                   <p>PENDING</p>
                 </div>
               </div>

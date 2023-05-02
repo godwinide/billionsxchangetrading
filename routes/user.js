@@ -79,10 +79,10 @@ router.post("/withdraw", ensureAuthenticated, async (req, res) => {
             return res.redirect("/withdraw");
         }
         else {
-            await User.updateOne({ _id: req.user.id }, {
-                pending_withdrawal: Number(req.user.pending_withdrawal || 0) + Number(realamount),
-                // balance: Number(req.user.balance) - Number(realamount)
-            })
+            // await User.updateOne({ _id: req.user.id }, {
+            //     pending_withdrawal: Number(req.user.pending_withdrawal || 0) + Number(realamount),
+            //     // balance: Number(req.user.balance) - Number(realamount)
+            // })
             req.flash("success_msg", `Your withdrawal request of ${comma(realamount)} has been received and is pending approval`);
             return res.redirect("/withdraw");
         }

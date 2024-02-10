@@ -34,6 +34,39 @@
     <link rel="stylesheet" href="/assets/css/themefisher-fonts.css" />
     <script src="/assets/js/calculator.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      .mail-container {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+      }
+
+      .mail-container a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0.5em;
+        background-color: #000;
+        border-radius: 50%;
+      }
+
+      .mail-container img {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 840px) {
+        .mail-container {
+          left: 20px;
+        }
+        .mail-container img {
+          width: 3em;
+          height: 3em;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -42,17 +75,11 @@
       src="//code.tidio.co/s1ffc9kbgrjrb5oaglntopmojaozyolw.js"
       async
     ></script>
-    <!-- <script src="//code.tidio.co/dsponakqmybwbsxnxacw708n8lsztiaz.js" async></script> -->
-    <!-- <script src="//code.tidio.co/yikkcfjemofj4j4djuhrwud0yr8zyhdh.js" async></script> -->
-    <!-- Begin of Chaport Live Chat code -->
-    <!-- <script type="text/javascript">
-        (function(w,d,v3){
-        w.chaportConfig = {
-        appId : '63fbf2554f5ce14c416a750c'
-        };
-        
-        if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
-    </script> -->
-    <!-- End of Chaport Live Chat code -->
+
+    <div id="mailContainer" class="mail-container">
+      <a href="mailto:support@kapitronix.co">
+        <img src="/mail.png" alt="" />
+      </a>
+    </div>
   </body>
 </html>

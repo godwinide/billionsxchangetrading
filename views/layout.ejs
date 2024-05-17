@@ -70,7 +70,27 @@
   </head>
 
   <body>
+    <div
+      style="z-index: 1000; position: relative"
+      id="google_translate_element"
+    ></div>
     <%-body%>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+
     <script src="//code.jivosite.com/widget/NjpH4cO7ts" async></script>
 
     <div id="mailContainer" class="mail-container">
